@@ -37,11 +37,11 @@
         <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#ff5722;" parent="1" source="power_in" target="inverter_main" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.2;exitY=1;entryX=0.3;entryY=0;" parent="1" source="inverter_main" target="inverter_cmd" edge="1">
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.2;exitY=1;" parent="1" source="inverter_main" edge="1">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="250" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="144" y="240" />
-              <mxPoint x="94" y="240" />
+              <mxPoint x="130" y="220" />
             </Array>
           </mxGeometry>
         </mxCell>
