@@ -78,7 +78,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.8;exitY=1;entryX=0.7;entryY=0;" edge="1" parent="1" source="motor_main" target="motor_feedback">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="220" />
+              <mxPoint x="860" y="490" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="edge9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#2196f3;" edge="1" parent="1" source="motor_rotor" target="motor_load">
           <mxGeometry relative="1" as="geometry" />
