@@ -32,7 +32,7 @@
           <mxGeometry x="-120" y="160" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="motor_load" value="&lt;b&gt;机械负载&lt;/b&gt;&lt;br&gt;风机/水泵/传送带&lt;br&gt;转矩/转速输出" style="rounded=1;fillColor=#e1f5fe;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="700" y="370" width="150" height="60" as="geometry" />
+          <mxGeometry x="700" y="380" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#ff5722;" parent="1" source="power_in" target="inverter_main" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -72,7 +72,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.3;exitY=0;entryX=0.2;entryY=1;" parent="1" source="motor_stator" target="motor_main" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="534" y="240" />
+              <mxPoint x="624" y="240" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="motor_main" target="motor_rotor">
           <mxGeometry relative="1" as="geometry">
