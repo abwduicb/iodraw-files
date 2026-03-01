@@ -80,7 +80,9 @@
         <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.8;exitY=1;entryX=0.7;entryY=0;" edge="1" parent="1" source="motor_main" target="motor_feedback">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="860" y="220" />
+              <mxPoint x="820" y="220" />
+              <mxPoint x="820" y="160" />
+              <mxPoint x="860" y="160" />
               <mxPoint x="860" y="490" />
             </Array>
           </mxGeometry>
