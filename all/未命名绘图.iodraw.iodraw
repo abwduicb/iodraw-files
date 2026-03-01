@@ -17,7 +17,7 @@
           <mxGeometry x="80" y="490" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="motor_main" value="&lt;b&gt;三相异步电动机&lt;/b&gt;&lt;br&gt;型号：Y系列 4kW 4极&lt;br&gt;额定转速：1440r/min" style="rounded=1;fillColor=#ffebee;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="480" y="100" width="220" height="120" as="geometry" />
+          <mxGeometry x="580" y="100" width="220" height="120" as="geometry" />
         </mxCell>
         <mxCell id="motor_stator" value="&lt;b&gt;定子绕组&lt;/b&gt;&lt;br&gt;星形/三角形接法&lt;br&gt;接收变频驱动电压" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="480" y="250" width="180" height="80" as="geometry" />
