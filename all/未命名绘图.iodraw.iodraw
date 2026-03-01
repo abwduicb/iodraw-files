@@ -7,78 +7,71 @@
         <mxCell id="inverter_main" value="&lt;b&gt;变频器核心单元&lt;/b&gt;&lt;br&gt;型号：通用矢量型变频器&lt;br&gt;控制方式：V/F/矢量控制" style="rounded=1;fillColor=#f3e5f5;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="100" y="100" width="220" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="inverter_cmd" value="&lt;b&gt;指令接收单元&lt;/b&gt;&lt;br&gt;RS485 Modbus-RTU&lt;br&gt;转速/正反转/启停指令" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="250" width="180" height="80" as="geometry" />
+        <mxCell id="inverter_cmd" value="&lt;b&gt;指令接收单元&lt;/b&gt;&lt;br&gt;RS485 Modbus-RTU&lt;br&gt;转速/正反转/启停" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="250" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="inverter_drive" value="&lt;b&gt;驱动输出单元&lt;/b&gt;&lt;br&gt;三相PWM输出&lt;br&gt;电压0-380V 频率0-50Hz" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="370" width="180" height="80" as="geometry" />
+        <mxCell id="inverter_drive" value="&lt;b&gt;驱动输出单元&lt;/b&gt;&lt;br&gt;三相PWM输出&lt;br&gt;0-380V/0-50Hz" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="370" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="inverter_protect" value="&lt;b&gt;保护检测单元&lt;/b&gt;&lt;br&gt;过流/过载/过压/欠压&lt;br&gt;电机温度检测" style="rounded=1;fillColor=#ffebee;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="490" width="180" height="80" as="geometry" />
+        <mxCell id="inverter_protect" value="&lt;b&gt;保护检测单元&lt;/b&gt;&lt;br&gt;过流/过载/过压&lt;br&gt;电机温度检测" style="rounded=1;fillColor=#ffebee;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="490" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="motor_main" value="&lt;b&gt;三相异步电动机&lt;/b&gt;&lt;br&gt;型号：Y系列 4kW 4极&lt;br&gt;额定转速：1440r/min" style="rounded=1;fillColor=#ffebee;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="450" y="100" width="220" height="120" as="geometry" />
+          <mxGeometry x="480" y="100" width="220" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="motor_stator" value="&lt;b&gt;定子绕组&lt;/b&gt;&lt;br&gt;三相星形/三角形接法&lt;br&gt;接收变频驱动电压" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="250" width="180" height="80" as="geometry" />
+        <mxCell id="motor_stator" value="&lt;b&gt;定子绕组&lt;/b&gt;&lt;br&gt;星形/三角形接法&lt;br&gt;接收变频驱动电压" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="250" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="motor_rotor" value="&lt;b&gt;转子单元&lt;/b&gt;&lt;br&gt;鼠笼式结构&lt;br&gt;电磁感应驱动旋转" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="370" width="180" height="80" as="geometry" />
+        <mxCell id="motor_rotor" value="&lt;b&gt;转子单元&lt;/b&gt;&lt;br&gt;鼠笼式结构&lt;br&gt;电磁感应旋转" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="370" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="motor_feedback" value="&lt;b&gt;状态反馈单元&lt;/b&gt;&lt;br&gt;转速编码器/电流传感器&lt;br&gt;温度传感器(PTC)" style="rounded=1;fillColor=#c8e6c9;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="490" width="180" height="80" as="geometry" />
+        <mxCell id="motor_feedback" value="&lt;b&gt;状态反馈单元&lt;/b&gt;&lt;br&gt;编码器/电流/温度&lt;br&gt;PTC温度传感" style="rounded=1;fillColor=#c8e6c9;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="490" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="power_in" value="&lt;b&gt;三相AC380V电源&lt;/b&gt;&lt;br&gt;50Hz 工频输入" style="rounded=1;fillColor=#f9fbe7;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-150" y="160" width="150" height="60" as="geometry" />
+          <mxGeometry x="-120" y="160" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="motor_load" value="&lt;b&gt;机械负载&lt;/b&gt;&lt;br&gt;风机/水泵/传送带&lt;br&gt;转矩/转速输出" style="rounded=1;fillColor=#e1f5fe;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="370" width="150" height="60" as="geometry" />
+          <mxGeometry x="700" y="370" width="150" height="60" as="geometry" />
         </mxCell>
         <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#ff5722;" parent="1" source="power_in" target="inverter_main" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="inverter_main" target="inverter_cmd" edge="1">
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.2;exitY=1;entryX=0.3;entryY=0;" parent="1" source="inverter_main" target="inverter_cmd" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="inverter_main" target="inverter_drive" edge="1">
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="inverter_main" target="inverter_drive" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="inverter_main" target="inverter_protect" edge="1">
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.8;exitY=1;entryX=0.7;entryY=0;" parent="1" source="inverter_main" target="inverter_protect" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="60" y="160" />
-              <mxPoint x="60" y="355" />
-              <mxPoint x="190" y="355" />
+              <mxPoint x="276" y="355" />
+              <mxPoint x="280" y="355" />
+              <mxPoint x="280" y="490" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#4caf50;strokeWidth=2;" parent="1" source="inverter_drive" target="motor_stator" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="motor_stator" target="motor_main" edge="1">
+        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.3;exitY=0;entryX=0.2;entryY=1;" parent="1" source="motor_stator" target="motor_main" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="motor_main" target="motor_rotor">
+        <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="motor_main" target="motor_rotor">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="motor_main" target="motor_feedback">
+        <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.8;exitY=1;entryX=0.7;entryY=0;" edge="1" parent="1" source="motor_main" target="motor_feedback">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#2196f3;" edge="1" parent="1" source="motor_rotor" target="motor_load">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#9c27b0;dashed=1;" edge="1" parent="1" source="motor_feedback" target="inverter_protect">
+        <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#9c27b0;dashed=1;exitX=0;exitY=0.8;entryX=0;entryY=0.2;" edge="1" parent="1" source="motor_feedback" target="inverter_protect">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#f44336;dashed=1;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-40" y="490" as="sourcePoint" />
-            <mxPoint x="20" y="220" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="-40" y="350" />
-              <mxPoint x="20" y="350" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#f44336;dashed=1;exitX=1;exitY=0.2;entryX=1;entryY=0.8;" edge="1" parent="1" source="inverter_protect" target="inverter_main">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
