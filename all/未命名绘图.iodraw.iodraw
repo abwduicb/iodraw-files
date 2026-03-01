@@ -71,11 +71,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.3;exitY=0;entryX=0.2;entryY=1;" parent="1" source="motor_stator" target="motor_main" edge="1">
+        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.3;exitY=0;entryX=0.11;entryY=0.983;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="motor_stator" target="motor_main" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="534" y="240" />
-              <mxPoint x="624" y="240" />
+              <mxPoint x="624" y="250" />
+              <mxPoint x="624" y="218" />
             </Array>
           </mxGeometry>
         </mxCell>
