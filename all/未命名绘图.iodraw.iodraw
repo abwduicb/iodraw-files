@@ -44,7 +44,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" parent="1" source="inverter_main" target="inverter_protect" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="160" />
+              <mxPoint x="60" y="355" />
+              <mxPoint x="190" y="355" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#4caf50;strokeWidth=2;" parent="1" source="inverter_drive" target="motor_stator" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -64,10 +70,12 @@
         <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#9c27b0;dashed=1;" edge="1" parent="1" source="motor_feedback" target="inverter_protect">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#f44336;dashed=1;" edge="1" parent="1">
+        <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#f44336;dashed=1;" edge="1" parent="1" source="inverter_protect" target="inverter_main">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="200" y="490" as="sourcePoint" />
-            <mxPoint x="220" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="355" />
+              <mxPoint x="250" y="355" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
