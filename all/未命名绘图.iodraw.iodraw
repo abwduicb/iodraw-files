@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="1rYEfNVGXKiWANqrHnmQ">
-    <mxGraphModel dx="2022" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1305" dy="279" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry x="100" y="100" width="220" height="120" as="geometry" />
         </mxCell>
         <mxCell id="inverter_cmd" value="&lt;b&gt;指令接收单元&lt;/b&gt;&lt;br&gt;RS485 Modbus-RTU&lt;br&gt;转速/正反转/启停" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="250" width="180" height="80" as="geometry" />
+          <mxGeometry x="40" y="250" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="inverter_drive" value="&lt;b&gt;驱动输出单元&lt;/b&gt;&lt;br&gt;三相PWM输出&lt;br&gt;0-380V/0-50Hz" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="370" width="180" height="80" as="geometry" />
@@ -38,7 +38,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.2;exitY=1;entryX=0.3;entryY=0;" parent="1" source="inverter_main" target="inverter_cmd" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="144" y="240" />
+              <mxPoint x="94" y="240" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="inverter_main" target="inverter_drive" edge="1">
           <mxGeometry relative="1" as="geometry">
