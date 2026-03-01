@@ -3,14 +3,44 @@
     <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
-        <mxCell id="1111111" parent="0" />
-        <mxCell id="HBi5Rnuiu1RhbLB5tBX6-1111111" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1111111">
-          <mxGeometry x="170" y="130" width="120" height="60" as="geometry" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pc" value="&lt;b&gt;C#上位机&lt;/b&gt;&lt;br&gt;数据监视/指令下发" style="rounded=1;fillColor=#e1f5fe;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="HBi5Rnuiu1RhbLB5tBX6-1111112" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1111111">
-          <mxGeometry x="100" y="230" width="80" height="80" as="geometry" />
+        <mxCell id="esp32" value="&lt;b&gt;ESP32S3控制器&lt;/b&gt;&lt;br&gt;RS485通信/逻辑控制" style="rounded=1;fillColor=#c8e6c9;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="220" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="HBi5Rnuiu1RhbLB5tBX6-1111113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.363;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1111111" source="HBi5Rnuiu1RhbLB5tBX6-1111111" target="HBi5Rnuiu1RhbLB5tBX6-1111112">
+        <mxCell id="rs485" value="&lt;b&gt;RS485通信模块&lt;/b&gt;&lt;br&gt;差分信号传输" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="360" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="inverter" value="&lt;b&gt;变频器&lt;/b&gt;&lt;br&gt;调节电机转速/转矩" style="rounded=1;fillColor=#f3e5f5;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="500" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="motor" value="&lt;b&gt;三相异步电动机&lt;/b&gt;&lt;br&gt;执行机构/动力输出" style="rounded=1;fillColor=#ffebee;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="640" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pcb" value="&lt;b&gt;PCB电路板&lt;/b&gt;&lt;br&gt;硬件集成/电路连接" style="rounded=1;fillColor=#f9fbe7;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="220" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="code_sch" value="&lt;b&gt;程序/原理图&lt;/b&gt;&lt;br&gt;逻辑实现/电路设计" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="360" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="pc" target="esp32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="esp32" target="rs485">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="rs485" target="inverter">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;" edge="1" parent="1" source="inverter" target="motor">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;" edge="1" parent="1" source="esp32" target="pcb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;" edge="1" parent="1" source="pcb" target="code_sch">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
