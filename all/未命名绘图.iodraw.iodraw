@@ -29,10 +29,10 @@
           <mxGeometry x="700" y="200" width="250" height="90" as="geometry" />
         </mxCell>
         <mxCell id="sim1" value="&lt;b&gt;CAD建模&lt;/b&gt;&lt;br&gt;SolidWorks/CATIA&lt;br&gt;三维装配模型" style="rounded=1;fillColor=#c8e6c9;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="320" width="180" height="70" as="geometry" />
+          <mxGeometry x="735" y="320" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="sim2" value="&lt;b&gt;CAE仿真&lt;/b&gt;&lt;br&gt;Romax/ADAMS/ANSYS&lt;br&gt;动力学/有限元分析" style="rounded=1;fillColor=#c8e6c9;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="880" y="320" width="180" height="70" as="geometry" />
+          <mxGeometry x="980" y="320" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="output" value="&lt;b&gt;设计输出&lt;/b&gt;&lt;br&gt;设计方案/仿真报告&lt;br&gt;满足动力性/经济性要求" style="rounded=1;fillColor=#ffebee;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="400" y="420" width="300" height="90" as="geometry" />
@@ -88,8 +88,8 @@
         <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#4caf50;" parent="1" source="stage2" target="design2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="610" y="305" />
-              <mxPoint x="550" y="305" />
+              <mxPoint x="620" y="300" />
+              <mxPoint x="620" y="300" />
             </Array>
           </mxGeometry>
         </mxCell>
