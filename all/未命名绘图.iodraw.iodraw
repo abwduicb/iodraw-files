@@ -11,16 +11,16 @@
           <mxGeometry x="100" y="200" width="250" height="90" as="geometry" />
         </mxCell>
         <mxCell id="param1" value="&lt;b&gt;输入参数&lt;/b&gt;&lt;br&gt;发动机外特性/整车质量&lt;br&gt;轮胎规格/驱动形式" style="rounded=1;fillColor=#f9fbe7;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-10" y="320" width="180" height="70" as="geometry" />
+          <mxGeometry x="-50" y="320" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="calc1" value="&lt;b&gt;核心计算&lt;/b&gt;&lt;br&gt;最高车速/爬坡度反推&lt;br&gt;一挡速比/主减速比" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="320" width="180" height="70" as="geometry" />
+          <mxGeometry x="150" y="320" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="stage2" value="&lt;b&gt;阶段2：结构选型与详细设计&lt;/b&gt;&lt;br&gt;两轴式MT结构/齿轮参数设计&lt;br&gt;轴/轴承/同步器选型" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="200" width="250" height="90" as="geometry" />
         </mxCell>
         <mxCell id="design1" value="&lt;b&gt;齿轮设计&lt;/b&gt;&lt;br&gt;模数/齿数/螺旋角&lt;br&gt;强度校核(接触/弯曲)" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="320" width="180" height="70" as="geometry" />
+          <mxGeometry x="340" y="320" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="design2" value="&lt;b&gt;轴系设计&lt;/b&gt;&lt;br&gt;轴径/刚度/强度&lt;br&gt;轴承选型与校核" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="550" y="320" width="180" height="70" as="geometry" />
@@ -80,16 +80,16 @@
         <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#4caf50;" parent="1" source="stage2" target="design1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="440" y="290" />
-              <mxPoint x="440" y="320" />
+              <mxPoint x="480" y="300" />
+              <mxPoint x="480" y="300" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#4caf50;" parent="1" source="stage2" target="design2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="560" y="290" />
-              <mxPoint x="560" y="320" />
+              <mxPoint x="610" y="305" />
+              <mxPoint x="550" y="305" />
             </Array>
           </mxGeometry>
         </mxCell>
