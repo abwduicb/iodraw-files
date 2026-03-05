@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="1rYEfNVGXKiWANqrHnmQ">
-    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2022" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,10 +11,10 @@
           <mxGeometry x="100" y="200" width="250" height="90" as="geometry" />
         </mxCell>
         <mxCell id="param1" value="&lt;b&gt;输入参数&lt;/b&gt;&lt;br&gt;发动机外特性/整车质量&lt;br&gt;轮胎规格/驱动形式" style="rounded=1;fillColor=#f9fbe7;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="320" width="180" height="70" as="geometry" />
+          <mxGeometry x="-10" y="320" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="calc1" value="&lt;b&gt;核心计算&lt;/b&gt;&lt;br&gt;最高车速/爬坡度反推&lt;br&gt;一挡速比/主减速比" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="320" width="180" height="70" as="geometry" />
+          <mxGeometry x="160" y="320" width="180" height="70" as="geometry" />
         </mxCell>
         <mxCell id="stage2" value="&lt;b&gt;阶段2：结构选型与详细设计&lt;/b&gt;&lt;br&gt;两轴式MT结构/齿轮参数设计&lt;br&gt;轴/轴承/同步器选型" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="200" width="250" height="90" as="geometry" />
