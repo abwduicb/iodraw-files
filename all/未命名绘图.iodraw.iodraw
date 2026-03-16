@@ -1,157 +1,159 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="1rYEfNVGXKiWANqrHnmQ">
-    <mxGraphModel dx="2261" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="main_stage" value="&lt;b&gt;长城风骏5变速器设计与仿真&lt;/b&gt;&lt;br&gt;两轴式手动变速器(5/6MT)" style="rounded=1;fillColor=#f3e5f5;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="400" y="50" width="300" height="100" as="geometry" />
+        <mxCell id="main" value="&lt;b&gt;ESP32 四路电机驱动控制系统&lt;/b&gt;&lt;br&gt;直流电机 / PWM调速 / 独立控制" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="450" y="50" width="320" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="stage1" value="&lt;b&gt;阶段1：需求分析与参数匹配&lt;/b&gt;&lt;br&gt;整车性能目标/动力总成参数&lt;br&gt;速比范围/挡位数确定" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="200" width="250" height="90" as="geometry" />
+        <mxCell id="hardware" value="&lt;b&gt;硬件系统设计&lt;/b&gt;&lt;br&gt;驱动模块选型 / 电路连接 / 电源设计" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="100" y="220" width="260" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="param1" value="&lt;b&gt;输入参数&lt;/b&gt;&lt;br&gt;发动机外特性/整车质量&lt;br&gt;轮胎规格/驱动形式" style="rounded=1;fillColor=#f9fbe7;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="320" width="180" height="70" as="geometry" />
+        <mxCell id="driver" value="&lt;b&gt;驱动电路&lt;/b&gt;&lt;br&gt;L298N/A4950 / 四路独立通道&lt;br&gt;ESP32 GPIO 接口定义" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="calc1" value="&lt;b&gt;核心计算&lt;/b&gt;&lt;br&gt;最高车速/爬坡度反推&lt;br&gt;一挡速比/主减速比" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="320" width="180" height="70" as="geometry" />
+        <mxCell id="power" value="&lt;b&gt;电源系统&lt;/b&gt;&lt;br&gt;电机电源 / ESP32供电&lt;br&gt;共地 / 防反接保护" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="260" y="340" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="stage2" value="&lt;b&gt;阶段2：结构选型与详细设计&lt;/b&gt;&lt;br&gt;两轴式MT结构/齿轮参数设计&lt;br&gt;轴/轴承/同步器选型" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="200" width="250" height="90" as="geometry" />
+        <mxCell id="control" value="&lt;b&gt;核心控制逻辑&lt;/b&gt;&lt;br&gt;GPIO初始化 / PWM配置 / 四路独立控制" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="450" y="220" width="260" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="design1" value="&lt;b&gt;齿轮设计&lt;/b&gt;&lt;br&gt;模数/齿数/螺旋角&lt;br&gt;强度校核(接触/弯曲)" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="320" width="180" height="70" as="geometry" />
+        <mxCell id="pwm" value="&lt;b&gt;PWM调速&lt;/b&gt;&lt;br&gt;16路PWM控制器&lt;br&gt;频率/占空比配置" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="380" y="340" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="design2" value="&lt;b&gt;轴系设计&lt;/b&gt;&lt;br&gt;轴径/刚度/强度&lt;br&gt;轴承选型与校核" style="rounded=1;fillColor=#fff3e0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="320" width="180" height="70" as="geometry" />
+        <mxCell id="motor_ctrl" value="&lt;b&gt;电机控制&lt;/b&gt;&lt;br&gt;正转/反转/停止&lt;br&gt;四路独立逻辑" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="590" y="340" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="stage3" value="&lt;b&gt;阶段3：建模与仿真分析&lt;/b&gt;&lt;br&gt;三维建模/CAE仿真验证&lt;br&gt;性能优化与迭代" style="rounded=1;fillColor=#e8eaf6;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="700" y="200" width="250" height="90" as="geometry" />
+        <mxCell id="comm" value="&lt;b&gt;通信与指令系统&lt;/b&gt;&lt;br&gt;串口/WiFi/蓝牙指令接收&lt;br&gt;解析与执行" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="800" y="220" width="260" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="sim1" value="&lt;b&gt;CAD建模&lt;/b&gt;&lt;br&gt;SolidWorks/CATIA&lt;br&gt;三维装配模型" style="rounded=1;fillColor=#c8e6c9;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="735" y="320" width="180" height="70" as="geometry" />
+        <mxCell id="uart" value="&lt;b&gt;串口通信&lt;/b&gt;&lt;br&gt;指令格式定义&lt;br&gt;数据接收与校验" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="770" y="340" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="sim2" value="&lt;b&gt;CAE仿真&lt;/b&gt;&lt;br&gt;Romax/ADAMS/ANSYS&lt;br&gt;动力学/有限元分析" style="rounded=1;fillColor=#c8e6c9;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="980" y="320" width="180" height="70" as="geometry" />
+        <mxCell id="cmd" value="&lt;b&gt;指令解析&lt;/b&gt;&lt;br&gt;通道选择 / 速度设定&lt;br&gt;动作执行分配" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="980" y="340" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="output" value="&lt;b&gt;设计输出&lt;/b&gt;&lt;br&gt;设计方案/仿真报告&lt;br&gt;满足动力性/经济性要求" style="rounded=1;fillColor=#ffebee;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="400" y="420" width="300" height="90" as="geometry" />
+        <mxCell id="output" value="&lt;b&gt;系统运行输出&lt;/b&gt;&lt;br&gt;四路电机稳定运行&lt;br&gt;状态反馈 / 异常保护" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="450" y="450" width="320" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#ff5722;" parent="1" source="main_stage" target="stage1" edge="1">
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="main" target="hardware" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="250" y="100" />
-              <mxPoint x="250" y="200" />
+              <mxPoint x="280" y="100" />
+              <mxPoint x="280" y="220" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#ff5722;" parent="1" source="main_stage" edge="1" target="stage2">
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="main" target="control" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="525" y="150" />
-              <mxPoint x="525" y="200" />
+              <mxPoint x="610" y="150" />
+              <mxPoint x="610" y="220" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#ff5722;" parent="1" source="main_stage" target="stage3" edge="1">
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="main" target="comm" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="800" y="100" />
-              <mxPoint x="800" y="200" />
+              <mxPoint x="930" y="100" />
+              <mxPoint x="930" y="220" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#4caf50;" parent="1" source="stage1" target="param1" edge="1">
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="hardware" target="driver" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="140" y="290" />
-              <mxPoint x="140" y="320" />
+              <mxPoint x="145" y="310" />
+              <mxPoint x="145" y="340" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#4caf50;" parent="1" source="stage1" target="calc1" edge="1">
+        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="hardware" target="power" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="270" y="290" />
-              <mxPoint x="270" y="320" />
+              <mxPoint x="275" y="310" />
+              <mxPoint x="275" y="340" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#4caf50;" parent="1" source="stage2" target="design1" edge="1">
+        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="control" target="pwm" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="480" y="300" />
-              <mxPoint x="480" y="300" />
+              <mxPoint x="475" y="310" />
+              <mxPoint x="475" y="340" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#4caf50;" parent="1" source="stage2" target="design2" edge="1">
+        <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="control" target="motor_ctrl" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="620" y="300" />
-              <mxPoint x="620" y="300" />
+              <mxPoint x="645" y="310" />
+              <mxPoint x="645" y="340" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#4caf50;" parent="1" source="stage3" target="sim1" edge="1">
+        <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="comm" target="uart" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="770" y="290" />
-              <mxPoint x="770" y="320" />
+              <mxPoint x="815" y="310" />
+              <mxPoint x="815" y="340" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#4caf50;" parent="1" source="stage3" target="sim2" edge="1">
+        <mxCell id="edge9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="comm" target="cmd" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="890" y="290" />
-              <mxPoint x="890" y="320" />
+              <mxPoint x="945" y="310" />
+              <mxPoint x="945" y="340" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#2196f3;" parent="1" source="param1" target="output" edge="1">
+        <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="driver" target="output" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="60" y="460" />
+              <mxPoint x="145" y="410" />
+              <mxPoint x="145" y="450" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#2196f3;" parent="1" source="calc1" target="output" edge="1">
+        <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="power" target="output" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="270" y="460" />
+              <mxPoint x="355" y="410" />
+              <mxPoint x="355" y="450" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#2196f3;" edge="1" parent="1" source="design1" target="output">
+        <mxCell id="edge12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="pwm" target="output" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="440" y="390" />
-              <mxPoint x="440" y="420" />
+              <mxPoint x="475" y="410" />
+              <mxPoint x="475" y="450" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#2196f3;" edge="1" parent="1" source="design2" target="output">
+        <mxCell id="edge13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="motor_ctrl" target="output" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="560" y="390" />
-              <mxPoint x="560" y="420" />
+              <mxPoint x="685" y="410" />
+              <mxPoint x="685" y="450" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#2196f3;" edge="1" parent="1" source="sim1" target="output">
+        <mxCell id="edge14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="uart" target="output" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="770" y="390" />
-              <mxPoint x="770" y="420" />
-              <mxPoint x="700" y="420" />
+              <mxPoint x="865" y="410" />
+              <mxPoint x="865" y="450" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#2196f3;" edge="1" parent="1" source="sim2" target="output">
+        <mxCell id="edge15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="cmd" target="output" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1010" y="420" />
+              <mxPoint x="1075" y="410" />
+              <mxPoint x="1075" y="450" />
             </Array>
           </mxGeometry>
         </mxCell>
