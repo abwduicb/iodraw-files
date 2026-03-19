@@ -14,10 +14,10 @@
           <mxGeometry x="150" y="300" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="calc" value="&lt;b&gt;液位换算处理&lt;/b&gt;&lt;br&gt;电压转距离/液位&lt;br&gt;校准算法计算" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="400" y="300" width="200" height="70" as="geometry" />
+          <mxGeometry x="460" y="280" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="judge" value="&lt;b&gt;液位阈值判断&lt;/b&gt;&lt;br&gt;是否低于警戒液位&lt;br&gt;缺液状态判定" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="650" y="300" width="200" height="70" as="geometry" />
+          <mxGeometry x="810" y="300" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="normal" value="&lt;b&gt;正常状态处理&lt;/b&gt;&lt;br&gt;更新液位数据&lt;br&gt;无报警输出" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="250" y="420" width="200" height="70" as="geometry" />
