@@ -4,6 +4,54 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="main" value="&lt;b&gt;超声波液位传感器子程序&lt;/b&gt;&lt;br&gt;STM32 ADC采集 + 实时监测 + 缺液报警" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="400" y="50" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="init" value="&lt;b&gt;模块初始化&lt;/b&gt;&lt;br&gt;ADC初始化 / GPIO配置&lt;br&gt;阈值参数设定" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="180" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="read" value="&lt;b&gt;ADC采集模拟量&lt;/b&gt;&lt;br&gt;超声波传感器输出&lt;br&gt;多通道滤波采样" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="150" y="300" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="calc" value="&lt;b&gt;液位换算处理&lt;/b&gt;&lt;br&gt;电压转距离/液位&lt;br&gt;校准算法计算" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="judge" value="&lt;b&gt;液位阈值判断&lt;/b&gt;&lt;br&gt;是否低于警戒液位&lt;br&gt;缺液状态判定" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="650" y="300" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="normal" value="&lt;b&gt;正常状态处理&lt;/b&gt;&lt;br&gt;更新液位数据&lt;br&gt;无报警输出" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="250" y="420" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="alarm" value="&lt;b&gt;缺液报警处理&lt;/b&gt;&lt;br&gt;语音报警提示&lt;br&gt;状态标志位置1" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="420" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="data" value="&lt;b&gt;数据上传与输出&lt;/b&gt;&lt;br&gt;液位数据送显示&lt;br&gt;反馈至主控系统" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="400" y="540" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="main" target="init">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="read">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="calc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="judge">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="judge" target="normal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="judge" target="alarm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="normal" target="data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="alarm" target="data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
