@@ -8,22 +8,22 @@
           <mxGeometry x="400" y="50" width="320" height="90" as="geometry" />
         </mxCell>
         <mxCell id="init" value="&lt;b&gt;OLED初始化&lt;/b&gt;&lt;br&gt;I2C通信配置&lt;br&gt;清屏 / 驱动初始化" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="400" y="180" width="220" height="80" as="geometry" />
+          <mxGeometry x="450" y="180" width="220" height="80" as="geometry" />
         </mxCell>
         <mxCell id="data" value="&lt;b&gt;读取系统数据&lt;/b&gt;&lt;br&gt;液位 / 流量 / 喷雾次数&lt;br&gt;门禁 / 运行状态" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="150" y="300" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="show" value="&lt;b&gt;页面刷新显示&lt;/b&gt;&lt;br&gt;分区域显示内容&lt;br&gt;字符/数字格式化" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="400" y="300" width="200" height="70" as="geometry" />
+          <mxGeometry x="350" y="300" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="state" value="&lt;b&gt;状态标识显示&lt;/b&gt;&lt;br&gt;正常/报警/工作状态&lt;br&gt;图标与文字提示" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="650" y="300" width="200" height="70" as="geometry" />
+          <mxGeometry x="570" y="300" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="delay" value="&lt;b&gt;刷新延时控制&lt;/b&gt;&lt;br&gt;设定刷新间隔&lt;br&gt;避免频繁刷屏" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="250" y="420" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="check" value="&lt;b&gt;数据更新检查&lt;/b&gt;&lt;br&gt;判断是否需要重绘&lt;br&gt;状态变化检测" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="550" y="420" width="200" height="70" as="geometry" />
+          <mxGeometry x="480" y="420" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="loop" value="&lt;b&gt;循环显示主流程&lt;/b&gt;&lt;br&gt;持续刷新界面&lt;br&gt;保持实时显示" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="400" y="540" width="220" height="80" as="geometry" />
