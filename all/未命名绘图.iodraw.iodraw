@@ -4,44 +4,53 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="main" value="&lt;b&gt;YF-S201流量传感器子程序&lt;/b&gt;&lt;br&gt;脉冲捕获 + 流量计算 + 喷雾量控制" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="main" value="&lt;b&gt;OLED显示屏子程序&lt;/b&gt;&lt;br&gt;I2C通信 + 实时状态显示 + 人机交互" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="400" y="50" width="320" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="init" value="&lt;b&gt;模块初始化&lt;/b&gt;&lt;br&gt;定时器输入捕获&lt;br&gt;中断配置 / 系数设定" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="450" y="180" width="220" height="80" as="geometry" />
+        <mxCell id="init" value="&lt;b&gt;OLED初始化&lt;/b&gt;&lt;br&gt;I2C通信配置&lt;br&gt;清屏 / 驱动初始化" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="180" width="220" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="capture" value="&lt;b&gt;脉冲信号捕获&lt;/b&gt;&lt;br&gt;定时器读取脉冲&lt;br&gt;流量传感器输出" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="213" y="300" width="200" height="70" as="geometry" />
+        <mxCell id="data" value="&lt;b&gt;读取系统数据&lt;/b&gt;&lt;br&gt;液位 / 流量 / 喷雾次数&lt;br&gt;门禁 / 运行状态" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="150" y="300" width="200" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="calc" value="&lt;b&gt;流量计算处理&lt;/b&gt;&lt;br&gt;脉冲转流量值&lt;br&gt;单位时间流量统计" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="413" y="300" width="200" height="70" as="geometry" />
+        <mxCell id="show" value="&lt;b&gt;页面刷新显示&lt;/b&gt;&lt;br&gt;分区域显示内容&lt;br&gt;字符/数字格式化" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="300" width="200" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="judge" value="&lt;b&gt;喷雾量判断&lt;/b&gt;&lt;br&gt;是否达到设定喷雾量&lt;br&gt;流量异常检测" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="613" y="300" width="200" height="70" as="geometry" />
+        <mxCell id="state" value="&lt;b&gt;状态标识显示&lt;/b&gt;&lt;br&gt;正常/报警/工作状态&lt;br&gt;图标与文字提示" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="650" y="300" width="200" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="err" value="&lt;b&gt;异常状态处理&lt;/b&gt;&lt;br&gt;流量异常报警&lt;br&gt;强制关闭喷雾" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="750" y="420" width="200" height="70" as="geometry" />
+        <mxCell id="delay" value="&lt;b&gt;刷新延时控制&lt;/b&gt;&lt;br&gt;设定刷新间隔&lt;br&gt;避免频繁刷屏" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="250" y="420" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="check" value="&lt;b&gt;数据更新检查&lt;/b&gt;&lt;br&gt;判断是否需要重绘&lt;br&gt;状态变化检测" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="420" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="loop" value="&lt;b&gt;循环显示主流程&lt;/b&gt;&lt;br&gt;持续刷新界面&lt;br&gt;保持实时显示" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="400" y="540" width="220" height="80" as="geometry" />
         </mxCell>
         <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="main" target="init">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="capture">
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="data">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="calc">
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="show">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="judge">
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="state">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="judge" target="ctrl">
+        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="state" target="delay">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="judge" target="err">
+        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="show" target="check">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ctrl" value="&lt;b&gt;喷雾控制输出&lt;/b&gt;&lt;br&gt;保持/停止喷雾&lt;br&gt;精确控量防浪费" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="510" y="420" width="200" height="70" as="geometry" />
+        <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="delay" target="loop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="check" target="loop">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
