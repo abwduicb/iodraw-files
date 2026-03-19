@@ -20,10 +20,10 @@
           <mxGeometry x="570" y="300" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="delay" value="&lt;b&gt;刷新延时控制&lt;/b&gt;&lt;br&gt;设定刷新间隔&lt;br&gt;避免频繁刷屏" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="250" y="420" width="200" height="70" as="geometry" />
+          <mxGeometry x="680" y="420" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="check" value="&lt;b&gt;数据更新检查&lt;/b&gt;&lt;br&gt;判断是否需要重绘&lt;br&gt;状态变化检测" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="480" y="420" width="200" height="70" as="geometry" />
+          <mxGeometry x="350" y="420" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="loop" value="&lt;b&gt;循环显示主流程&lt;/b&gt;&lt;br&gt;持续刷新界面&lt;br&gt;保持实时显示" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="400" y="540" width="220" height="80" as="geometry" />
