@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="G-jk-bFvzxO7wDGGtwJR">
-    <mxGraphModel dx="712" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="838" dy="973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,13 +11,13 @@
           <mxGeometry x="450" y="180" width="220" height="80" as="geometry" />
         </mxCell>
         <mxCell id="capture" value="&lt;b&gt;脉冲信号捕获&lt;/b&gt;&lt;br&gt;定时器读取脉冲&lt;br&gt;流量传感器输出" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="150" y="300" width="200" height="70" as="geometry" />
+          <mxGeometry x="213" y="300" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="calc" value="&lt;b&gt;流量计算处理&lt;/b&gt;&lt;br&gt;脉冲转流量值&lt;br&gt;单位时间流量统计" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="400" y="300" width="200" height="70" as="geometry" />
+          <mxGeometry x="413" y="300" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="judge" value="&lt;b&gt;喷雾量判断&lt;/b&gt;&lt;br&gt;是否达到设定喷雾量&lt;br&gt;流量异常检测" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="650" y="300" width="200" height="70" as="geometry" />
+          <mxGeometry x="613" y="300" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="err" value="&lt;b&gt;异常状态处理&lt;/b&gt;&lt;br&gt;流量异常报警&lt;br&gt;强制关闭喷雾" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="750" y="420" width="200" height="70" as="geometry" />
@@ -41,7 +41,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ctrl" value="&lt;b&gt;喷雾控制输出&lt;/b&gt;&lt;br&gt;保持/停止喷雾&lt;br&gt;精确控量防浪费" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="550" y="420" width="200" height="70" as="geometry" />
+          <mxGeometry x="510" y="420" width="200" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
