@@ -23,7 +23,7 @@
           <mxGeometry x="750" y="420" width="200" height="70" as="geometry" />
         </mxCell>
         <mxCell id="data" value="&lt;b&gt;数据上传与输出&lt;/b&gt;&lt;br&gt;流量/喷雾次数显示&lt;br&gt;数据同步主控" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="400" y="540" width="220" height="80" as="geometry" />
+          <mxGeometry x="810" y="90" width="220" height="80" as="geometry" />
         </mxCell>
         <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="main" target="init">
           <mxGeometry relative="1" as="geometry" />
@@ -56,7 +56,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ctrl" value="&lt;b&gt;喷雾控制输出&lt;/b&gt;&lt;br&gt;保持/停止喷雾&lt;br&gt;精确控量防浪费" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="540" y="420" width="200" height="70" as="geometry" />
+          <mxGeometry x="550" y="420" width="200" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
