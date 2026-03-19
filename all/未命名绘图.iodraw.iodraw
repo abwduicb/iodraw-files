@@ -1,37 +1,37 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="1rYEfNVGXKiWANqrHnmQ">
-    <mxGraphModel dx="1434" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="472" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="main" value="&lt;b&gt;ESP32 四路电机驱动控制系统&lt;/b&gt;&lt;br&gt;直流电机 / PWM调速 / 独立控制" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="main" value="&lt;b&gt;ESP32 四路电机驱动控制系统&lt;/b&gt;&lt;br&gt;直流电机 / PWM调速 / 独立控制" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="450" y="50" width="320" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="hardware" value="&lt;b&gt;硬件系统设计&lt;/b&gt;&lt;br&gt;驱动模块选型 / 电路连接 / 电源设计" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="hardware" value="&lt;b&gt;硬件系统设计&lt;/b&gt;&lt;br&gt;驱动模块选型 / 电路连接 / 电源设计" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="100" y="220" width="260" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="driver" value="&lt;b&gt;驱动电路&lt;/b&gt;&lt;br&gt;L298N/A4950 / 四路独立通道&lt;br&gt;ESP32 GPIO 接口定义" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="driver" value="&lt;b&gt;驱动电路&lt;/b&gt;&lt;br&gt;L298N/A4950 / 四路独立通道&lt;br&gt;ESP32 GPIO 接口定义" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry y="340" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="power" value="&lt;b&gt;电源系统&lt;/b&gt;&lt;br&gt;电机电源 / ESP32供电&lt;br&gt;共地 / 防反接保护" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="power" value="&lt;b&gt;电源系统&lt;/b&gt;&lt;br&gt;电机电源 / ESP32供电&lt;br&gt;共地 / 防反接保护" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="220" y="340" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="control" value="&lt;b&gt;核心控制逻辑&lt;/b&gt;&lt;br&gt;GPIO初始化 / PWM配置 / 四路独立控制" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="control" value="&lt;b&gt;核心控制逻辑&lt;/b&gt;&lt;br&gt;GPIO初始化 / PWM配置 / 四路独立控制" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="450" y="220" width="260" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="pwm" value="&lt;b&gt;PWM调速&lt;/b&gt;&lt;br&gt;16路PWM控制器&lt;br&gt;频率/占空比配置" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="pwm" value="&lt;b&gt;PWM调速&lt;/b&gt;&lt;br&gt;16路PWM控制器&lt;br&gt;频率/占空比配置" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="380" y="340" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="motor_ctrl" value="&lt;b&gt;电机控制&lt;/b&gt;&lt;br&gt;正转/反转/停止&lt;br&gt;四路独立逻辑" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="motor_ctrl" value="&lt;b&gt;电机控制&lt;/b&gt;&lt;br&gt;正转/反转/停止&lt;br&gt;四路独立逻辑" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="590" y="340" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="comm" value="&lt;b&gt;通信与指令系统&lt;/b&gt;&lt;br&gt;串口/WiFi/蓝牙指令接收&lt;br&gt;解析与执行" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="comm" value="&lt;b&gt;通信与指令系统&lt;/b&gt;&lt;br&gt;串口/WiFi/蓝牙指令接收&lt;br&gt;解析与执行" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="800" y="220" width="260" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="uart" value="&lt;b&gt;串口通信&lt;/b&gt;&lt;br&gt;指令格式定义&lt;br&gt;数据接收与校验" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="uart" value="&lt;b&gt;串口通信&lt;/b&gt;&lt;br&gt;指令格式定义&lt;br&gt;数据接收与校验" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="770" y="340" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="cmd" value="&lt;b&gt;指令解析&lt;/b&gt;&lt;br&gt;通道选择 / 速度设定&lt;br&gt;动作执行分配" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="cmd" value="&lt;b&gt;指令解析&lt;/b&gt;&lt;br&gt;通道选择 / 速度设定&lt;br&gt;动作执行分配" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="980" y="340" width="190" height="70" as="geometry" />
         </mxCell>
         <mxCell id="output" value="&lt;b&gt;系统运行输出&lt;/b&gt;&lt;br&gt;四路电机稳定运行&lt;br&gt;状态反馈 / 异常保护" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
