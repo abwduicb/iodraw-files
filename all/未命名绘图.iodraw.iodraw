@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="G-jk-bFvzxO7wDGGtwJR">
-    <mxGraphModel dx="1017" dy="1181" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1087" dy="973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry x="450" y="40" width="340" height="90" as="geometry" />
         </mxCell>
         <mxCell id="init" value="&lt;b&gt;系统初始化&lt;/b&gt;&lt;br&gt;ESP32外设初始化 | I2S/ADC/GPIO&lt;br&gt;语音模块/继电器/指示灯配置" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="450" y="160" width="280" height="75" as="geometry" />
+          <mxGeometry x="480" y="160" width="280" height="75" as="geometry" />
         </mxCell>
         <mxCell id="task1" value="&lt;b&gt;语音采集与识别&lt;/b&gt;&lt;br&gt;麦克风阵列采集 | 离线指令识别" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="150" y="270" width="220" height="65" as="geometry" />
