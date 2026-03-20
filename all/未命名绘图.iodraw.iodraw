@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="G-jk-bFvzxO7wDGGtwJR">
-    <mxGraphModel dx="1087" dy="973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="770" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
           <mxGeometry x="790" y="270" width="220" height="65" as="geometry" />
         </mxCell>
         <mxCell id="run1" value="&lt;b&gt;灯光/窗帘控制&lt;/b&gt;&lt;br&gt;继电器输出 | 电机驱动" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="900" y="380" width="200" height="60" as="geometry" />
+          <mxGeometry x="920" y="380" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="run3" value="&lt;b&gt;状态反馈输出&lt;/b&gt;&lt;br&gt;LED指示 | 语音播报" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="700" y="380" width="200" height="60" as="geometry" />
@@ -65,7 +65,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="run2" value="&lt;b&gt;空调设备控制&lt;/b&gt;&lt;br&gt;状态切换 | 模式调节" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="500" y="380" width="200" height="60" as="geometry" />
+          <mxGeometry x="490" y="390" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ztIyNj3IIotfV3buq6CD-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="task3" target="task2">
           <mxGeometry relative="1" as="geometry">
