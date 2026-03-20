@@ -8,7 +8,7 @@
           <mxGeometry x="400" y="50" width="300" height="80" as="geometry" />
         </mxCell>
         <mxCell id="init" value="&lt;b&gt;驱动初始化&lt;/b&gt;&lt;br&gt;GPIO配置 | 初始状态关闭" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="400" y="160" width="220" height="70" as="geometry" />
+          <mxGeometry x="440" y="160" width="220" height="70" as="geometry" />
         </mxCell>
         <mxCell id="cmd" value="&lt;b&gt;接收控制指令&lt;/b&gt;&lt;br&gt;开机/关机/模式调节" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="180" y="260" width="190" height="60" as="geometry" />
@@ -17,10 +17,10 @@
           <mxGeometry x="420" y="260" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="save" value="&lt;b&gt;状态保存&lt;/b&gt;&lt;br&gt;记录当前开关状态" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="250" y="360" width="180" height="60" as="geometry" />
+          <mxGeometry x="340" y="360" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="fb" value="&lt;b&gt;状态反馈&lt;/b&gt;&lt;br&gt;LED/语音提示执行结果" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="500" y="360" width="180" height="60" as="geometry" />
+          <mxGeometry x="520" y="360" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="loop" value="&lt;b&gt;待机监听指令&lt;/b&gt;&lt;br&gt;低功耗 | 等待下一次控制" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="400" y="460" width="220" height="70" as="geometry" />
