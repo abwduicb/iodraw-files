@@ -11,7 +11,7 @@
           <mxGeometry x="520" y="160" width="360" height="75" as="geometry" />
         </mxCell>
         <mxCell id="yolo" value="&lt;b&gt;图像采集与YOLO算法识别&lt;/b&gt;&lt;br&gt;OpenMV摄像头采集图像 | YOLO目标检测算法&lt;br&gt;目标识别/身份验证/状态检测" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="150" y="270" width="260" height="70" as="geometry" />
+          <mxGeometry x="310" y="270" width="260" height="70" as="geometry" />
         </mxCell>
         <mxCell id="zpfocMuhia9GllL1O28J-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sensor" target="spray">
           <mxGeometry relative="1" as="geometry" />
@@ -44,7 +44,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="yolo" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="255" />
+              <mxPoint x="440" y="255" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="sensor" edge="1">
           <mxGeometry relative="1" as="geometry" />
