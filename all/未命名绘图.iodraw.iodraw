@@ -11,7 +11,7 @@
           <mxGeometry x="480" y="160" width="280" height="75" as="geometry" />
         </mxCell>
         <mxCell id="task1" value="&lt;b&gt;语音采集与识别&lt;/b&gt;&lt;br&gt;麦克风阵列采集 | 离线指令识别" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="150" y="270" width="220" height="65" as="geometry" />
+          <mxGeometry x="230" y="375" width="220" height="65" as="geometry" />
         </mxCell>
         <mxCell id="task3" value="&lt;b&gt;控制逻辑解析&lt;/b&gt;&lt;br&gt;语音指令匹配 | 执行策略判断" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="790" y="270" width="220" height="65" as="geometry" />
