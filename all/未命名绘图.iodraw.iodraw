@@ -16,6 +16,9 @@
         <mxCell id="zpfocMuhia9GllL1O28J-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sensor" target="spray">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="zpfocMuhia9GllL1O28J-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sensor" target="voice">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="sensor" value="&lt;b&gt;多模块数据采集&lt;/b&gt;&lt;br&gt;超声波液位ADC采集 | YF-S201流量脉冲捕获&lt;br&gt;门禁状态/传感器数据读取" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="570" y="270" width="260" height="70" as="geometry" />
         </mxCell>
@@ -32,7 +35,7 @@
           <mxGeometry x="690" y="380" width="220" height="65" as="geometry" />
         </mxCell>
         <mxCell id="oled" value="&lt;b&gt;OLED实时显示&lt;/b&gt;&lt;br&gt;系统状态/液位/流量/喷雾次数&lt;br&gt;门禁结果/YOLO识别状态显示" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="910" y="530" width="220" height="65" as="geometry" />
+          <mxGeometry x="910" y="380" width="220" height="65" as="geometry" />
         </mxCell>
         <mxCell id="loop" value="&lt;b&gt;系统主循环&lt;/b&gt;&lt;br&gt;循环采集-识别-判断-执行 | 稳定实时运行&lt;br&gt;模块化数据交互 + 异常保护" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="500" y="585" width="360" height="75" as="geometry" />
