@@ -20,10 +20,10 @@
           <mxGeometry x="890" y="270" width="260" height="70" as="geometry" />
         </mxCell>
         <mxCell id="door" value="&lt;b&gt;门禁访问控制&lt;/b&gt;&lt;br&gt;ULN2003驱动 | 步进电机+电磁锁控制&lt;br&gt;权限验证通过 → 开门禁" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="150" y="380" width="220" height="65" as="geometry" />
+          <mxGeometry x="304" y="480" width="220" height="65" as="geometry" />
         </mxCell>
         <mxCell id="spray" value="&lt;b&gt;智能喷雾控制&lt;/b&gt;&lt;br&gt;流量闭环控制 | 定量喷雾&lt;br&gt;缺液禁止喷雾 + 报警保护" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="420" y="380" width="220" height="65" as="geometry" />
+          <mxGeometry x="450" y="380" width="220" height="65" as="geometry" />
         </mxCell>
         <mxCell id="voice" value="&lt;b&gt;语音提示播报&lt;/b&gt;&lt;br&gt;XF-S4240语音合成&lt;br&gt;状态播报/报警提示/操作指引" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="690" y="380" width="220" height="65" as="geometry" />
