@@ -4,46 +4,49 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="main" value="&lt;b&gt;窗帘驱动模块子程序&lt;/b&gt;&lt;br&gt;步进电机控制 | 继电器驱动" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
+        <mxCell id="main" value="&lt;b&gt;空调驱动电路子程序&lt;/b&gt;&lt;br&gt;继电器控制 | 状态切换" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="400" y="50" width="300" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="init" value="&lt;b&gt;驱动初始化&lt;/b&gt;&lt;br&gt;GPIO配置 | 电机初始归位" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="440" y="160" width="220" height="70" as="geometry" />
+        <mxCell id="init" value="&lt;b&gt;驱动初始化&lt;/b&gt;&lt;br&gt;GPIO配置 | 初始状态关闭" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="400" y="160" width="220" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="read" value="&lt;b&gt;读取控制指令&lt;/b&gt;&lt;br&gt;开窗帘/关窗帘/停止" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="cmd" value="&lt;b&gt;接收控制指令&lt;/b&gt;&lt;br&gt;开机/关机/模式调节" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="180" y="260" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="run" value="&lt;b&gt;电机驱动执行&lt;/b&gt;&lt;br&gt;正转/反转/制动" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="415" y="260" width="190" height="60" as="geometry" />
+        <mxCell id="out" value="&lt;b&gt;继电器输出&lt;/b&gt;&lt;br&gt;电平控制 | 空调供电切换" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="420" y="260" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pos" value="&lt;b&gt;位置检测&lt;/b&gt;&lt;br&gt;限位判断 | 行程保护" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="save" value="&lt;b&gt;状态保存&lt;/b&gt;&lt;br&gt;记录当前开关状态" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="250" y="360" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="stop" value="&lt;b&gt;停止输出&lt;/b&gt;&lt;br&gt;电机断电 | 状态锁定" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="fb" value="&lt;b&gt;状态反馈&lt;/b&gt;&lt;br&gt;LED/语音提示执行结果" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="500" y="360" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="loop" value="&lt;b&gt;等待新指令&lt;/b&gt;&lt;br&gt;状态保存 | 待机监听" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="loop" value="&lt;b&gt;待机监听指令&lt;/b&gt;&lt;br&gt;低功耗 | 等待下一次控制" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="400" y="460" width="220" height="70" as="geometry" />
         </mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="main" target="init">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="read">
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="cmd">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="read" target="run">
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="cmd" target="out">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="run" target="pos">
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="out" target="save">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="pos" target="stop">
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="out" target="fb">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="stop" target="loop">
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="save" target="loop">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="loop" target="read">
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="fb" target="loop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="loop" target="cmd">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
