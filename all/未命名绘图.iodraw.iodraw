@@ -1,81 +1,53 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="G-jk-bFvzxO7wDGGtwJR">
-    <mxGraphModel dx="770" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1087" dy="973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="main" value="&lt;b&gt;智慧卧室控制系统 - 主程序&lt;/b&gt;&lt;br&gt;ESP32离线控制 | 语音+环境+执行闭环" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="450" y="40" width="340" height="90" as="geometry" />
+        <mxCell id="main" value="&lt;b&gt;语音模块子程序&lt;/b&gt;&lt;br&gt;ESP32离线语音识别 | I2S麦克风阵列" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="400" y="50" width="300" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="init" value="&lt;b&gt;系统初始化&lt;/b&gt;&lt;br&gt;ESP32外设初始化 | I2S/ADC/GPIO&lt;br&gt;语音模块/继电器/指示灯配置" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="480" y="160" width="280" height="75" as="geometry" />
+        <mxCell id="init" value="&lt;b&gt;语音模块初始化&lt;/b&gt;&lt;br&gt;I2S通信配置 | 模型加载" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="400" y="160" width="220" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="task1" value="&lt;b&gt;语音采集与识别&lt;/b&gt;&lt;br&gt;麦克风阵列采集 | 离线指令识别" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="230" y="375" width="220" height="65" as="geometry" />
+        <mxCell id="get" value="&lt;b&gt;音频数据采集&lt;/b&gt;&lt;br&gt;麦克风阵列拾音 | 数据缓存" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="180" y="260" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="task3" value="&lt;b&gt;控制逻辑解析&lt;/b&gt;&lt;br&gt;语音指令匹配 | 执行策略判断" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="820" y="270" width="220" height="65" as="geometry" />
+        <mxCell id="check" value="&lt;b&gt;有效指令检测&lt;/b&gt;&lt;br&gt;本地识别 | 关键词匹配" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="420" y="260" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="run1" value="&lt;b&gt;灯光/窗帘控制&lt;/b&gt;&lt;br&gt;继电器输出 | 电机驱动" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="940" y="380" width="200" height="60" as="geometry" />
+        <mxCell id="yes" value="&lt;b&gt;指令有效&lt;/b&gt;&lt;br&gt;解析指令内容 | 上传主控" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="250" y="360" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="run3" value="&lt;b&gt;状态反馈输出&lt;/b&gt;&lt;br&gt;LED指示 | 语音播报" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="730" y="380" width="200" height="60" as="geometry" />
+        <mxCell id="no" value="&lt;b&gt;指令无效&lt;/b&gt;&lt;br&gt;丢弃数据 | 等待重新采集" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="500" y="360" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="loop" value="&lt;b&gt;系统主循环&lt;/b&gt;&lt;br&gt;循环采集-控制-反馈 | 离线稳定运行" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="480" y="490" width="280" height="75" as="geometry" />
+        <mxCell id="loop" value="&lt;b&gt;语音采集循环&lt;/b&gt;&lt;br&gt;持续监听 | 低功耗待机" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="400" y="460" width="220" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="main" target="init" edge="1">
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="main" target="init">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="task1" edge="1">
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="get">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="task2" edge="1">
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="init" target="check">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="task3" edge="1">
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="check" target="yes">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="task3" target="run1" edge="1">
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="check" target="no">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="task2" target="run2" edge="1">
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="yes" target="loop">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="task3" target="run3" edge="1">
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="no" target="loop">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="run2" target="loop" edge="1">
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="loop" target="get">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="run2" target="loop">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="run3" target="loop">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="620" y="480" as="sourcePoint" />
-            <mxPoint x="340" y="430" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="620" y="460" />
-              <mxPoint x="340" y="460" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="run2" value="&lt;b&gt;空调设备控制&lt;/b&gt;&lt;br&gt;状态切换 | 模式调节" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="520" y="380" width="200" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ztIyNj3IIotfV3buq6CD-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="task3" target="task2">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="790" y="303" as="sourcePoint" />
-            <mxPoint x="600" y="380" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="task2" value="&lt;b&gt;环境数据采集&lt;/b&gt;&lt;br&gt;ADC读取传感器 | 环境状态解析" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="510" y="270" width="220" height="65" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
