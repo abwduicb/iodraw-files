@@ -8,13 +8,13 @@
           <mxGeometry x="400" y="50" width="300" height="80" as="geometry" />
         </mxCell>
         <mxCell id="init" value="&lt;b&gt;驱动初始化&lt;/b&gt;&lt;br&gt;GPIO配置 | 电机初始归位" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="400" y="160" width="220" height="70" as="geometry" />
+          <mxGeometry x="440" y="160" width="220" height="70" as="geometry" />
         </mxCell>
         <mxCell id="read" value="&lt;b&gt;读取控制指令&lt;/b&gt;&lt;br&gt;开窗帘/关窗帘/停止" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="180" y="260" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="run" value="&lt;b&gt;电机驱动执行&lt;/b&gt;&lt;br&gt;正转/反转/制动" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="420" y="260" width="190" height="60" as="geometry" />
+          <mxGeometry x="415" y="260" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="pos" value="&lt;b&gt;位置检测&lt;/b&gt;&lt;br&gt;限位判断 | 行程保护" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="250" y="360" width="180" height="60" as="geometry" />
