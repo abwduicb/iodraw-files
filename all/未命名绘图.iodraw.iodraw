@@ -23,19 +23,19 @@
           <mxGeometry x="560" y="390" width="300" height="70" as="geometry" />
         </mxCell>
         <mxCell id="led" value="&lt;b&gt;LED状态指示&lt;/b&gt;&lt;br&gt;左转LED/右转LED/刹车LED&lt;br&gt;对应动作点亮" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="120" y="470" width="200" height="65" as="geometry" />
+          <mxGeometry x="270" y="470" width="200" height="65" as="geometry" />
         </mxCell>
         <mxCell id="oled" value="&lt;b&gt;OLED数据显示&lt;/b&gt;&lt;br&gt;显示动作状态+距离+姿态数据&lt;br&gt;实时刷新界面" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="350" y="470" width="200" height="65" as="geometry" />
+          <mxGeometry x="500" y="470" width="200" height="65" as="geometry" />
         </mxCell>
         <mxCell id="beep" value="&lt;b&gt;蜂鸣器报警&lt;/b&gt;&lt;br&gt;距离低于阈值启动报警&lt;br&gt;安全距离关闭报警" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="580" y="470" width="200" height="65" as="geometry" />
+          <mxGeometry x="730" y="470" width="200" height="65" as="geometry" />
         </mxCell>
         <mxCell id="bt_send" value="&lt;b&gt;蓝牙信息上传&lt;/b&gt;&lt;br&gt;上传动作/距离/报警状态至APP&lt;br&gt;实现无线监控" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="810" y="470" width="200" height="65" as="geometry" />
+          <mxGeometry x="960" y="470" width="200" height="65" as="geometry" />
         </mxCell>
         <mxCell id="loop" value="&lt;b&gt;系统主循环&lt;/b&gt;&lt;br&gt;循环采集-判断-执行&lt;br&gt;实时稳定运行" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="530" y="585" width="300" height="75" as="geometry" />
+          <mxGeometry x="570" y="585" width="300" height="75" as="geometry" />
         </mxCell>
         <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="main" target="init" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -53,12 +53,6 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="ble" target="logic">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="logic" target="beep" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="logic" target="bt_send" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
