@@ -1,86 +1,88 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="G-jk-bFvzxO7wDGGtwJR">
-    <mxGraphModel dx="1395" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="712" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="main" value="&lt;b&gt;智能消毒与访问控制系统 - 主程序&lt;/b&gt;&lt;br&gt;STM32F407 + OpenMV + YOLO目标识别 | 模块化协同控制" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="500" y="40" width="400" height="90" as="geometry" />
+        <mxCell id="main" value="&lt;b&gt;STM32F103骑行安全监测系统 - 主程序&lt;/b&gt;&lt;br&gt;MPU6050姿态识别+超声波防撞+蓝牙上传+OLED显示" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="500" y="40" width="420" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="init" value="&lt;b&gt;系统上电初始化&lt;/b&gt;&lt;br&gt;STM32外设初始化 | 串口/GPIO/ADC/定时器配置&lt;br&gt;OpenMV/语音/OLED/驱动模块初始化" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="520" y="160" width="360" height="75" as="geometry" />
+        <mxCell id="init" value="&lt;b&gt;系统上电初始化&lt;/b&gt;&lt;br&gt;STM32F103外设初始化 | I2C/SPI/串口/ADC配置&lt;br&gt;MPU6050/OLED/蓝牙/超声波/LED/蜂鸣器初始化" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="500" y="160" width="380" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="yolo" value="&lt;b&gt;图像采集与YOLO算法识别&lt;/b&gt;&lt;br&gt;OpenMV摄像头采集图像 | YOLO目标检测算法&lt;br&gt;目标识别/身份验证/状态检测" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="310" y="270" width="260" height="70" as="geometry" />
+        <mxCell id="mpu6050" value="&lt;b&gt;MPU6050姿态采集&lt;/b&gt;&lt;br&gt;读取加速度/陀螺仪数据&lt;br&gt;动作识别：左转/右转/刹车" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="150" y="270" width="240" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="zpfocMuhia9GllL1O28J-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sensor" target="spray">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="ultra" value="&lt;b&gt;超声波测距&lt;/b&gt;&lt;br&gt;HC-SR04采集后方距离&lt;br&gt;实时计算车距数据" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="460" y="270" width="220" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="zpfocMuhia9GllL1O28J-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sensor" target="voice">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="ble" value="&lt;b&gt;蓝牙指令监听&lt;/b&gt;&lt;br&gt;HC-05/06接收APP指令&lt;br&gt;准备状态信息上传" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="730" y="270" width="220" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="sensor" value="&lt;b&gt;多模块数据采集&lt;/b&gt;&lt;br&gt;超声波液位ADC采集 | YF-S201流量脉冲捕获&lt;br&gt;门禁状态/传感器数据读取" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="570" y="270" width="260" height="70" as="geometry" />
+        <mxCell id="logic" value="&lt;b&gt;系统逻辑判断&lt;/b&gt;&lt;br&gt;动作状态判定+防撞距离判断&lt;br&gt;生成控制指令" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="500" y="370" width="300" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="logic" value="&lt;b&gt;STM32主控逻辑判断&lt;/b&gt;&lt;br&gt;YOLO识别结果解析 | 液位/流量状态判断&lt;br&gt;门禁权限校验 + 消毒策略生成" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="890" y="270" width="260" height="70" as="geometry" />
+        <mxCell id="led" value="&lt;b&gt;LED状态指示&lt;/b&gt;&lt;br&gt;左转LED/右转LED/刹车LED&lt;br&gt;对应动作点亮" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="470" width="200" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="door" value="&lt;b&gt;门禁访问控制&lt;/b&gt;&lt;br&gt;ULN2003驱动 | 步进电机+电磁锁控制&lt;br&gt;权限验证通过 → 开门禁" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="320" y="470" width="220" height="65" as="geometry" />
+        <mxCell id="oled" value="&lt;b&gt;OLED数据显示&lt;/b&gt;&lt;br&gt;显示动作状态+距离+姿态数据&lt;br&gt;实时刷新界面" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="350" y="470" width="200" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="spray" value="&lt;b&gt;智能喷雾控制&lt;/b&gt;&lt;br&gt;流量闭环控制 | 定量喷雾&lt;br&gt;缺液禁止喷雾 + 报警保护" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="470" y="380" width="220" height="65" as="geometry" />
+        <mxCell id="beep" value="&lt;b&gt;蜂鸣器报警&lt;/b&gt;&lt;br&gt;距离低于阈值启动报警&lt;br&gt;安全距离关闭报警" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="580" y="470" width="200" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="voice" value="&lt;b&gt;语音提示播报&lt;/b&gt;&lt;br&gt;XF-S4240语音合成&lt;br&gt;状态播报/报警提示/操作指引" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="690" y="380" width="220" height="65" as="geometry" />
+        <mxCell id="bt_send" value="&lt;b&gt;蓝牙信息上传&lt;/b&gt;&lt;br&gt;上传动作/距离/报警状态至APP&lt;br&gt;实现无线监控" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="810" y="470" width="200" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="oled" value="&lt;b&gt;OLED实时显示&lt;/b&gt;&lt;br&gt;系统状态/液位/流量/喷雾次数&lt;br&gt;门禁结果/YOLO识别状态显示" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
-          <mxGeometry x="910" y="380" width="220" height="65" as="geometry" />
-        </mxCell>
-        <mxCell id="loop" value="&lt;b&gt;系统主循环&lt;/b&gt;&lt;br&gt;循环采集-识别-判断-执行 | 稳定实时运行&lt;br&gt;模块化数据交互 + 异常保护" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="510" y="585" width="360" height="75" as="geometry" />
+        <mxCell id="loop" value="&lt;b&gt;系统主循环&lt;/b&gt;&lt;br&gt;循环采集-判断-执行&lt;br&gt;实时稳定运行" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="500" y="570" width="300" height="75" as="geometry" />
         </mxCell>
         <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="main" target="init" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="yolo" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="700" y="255" />
-              <mxPoint x="440" y="255" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="sensor" edge="1">
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="mpu6050" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="logic" edge="1">
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="ultra" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="sensor" target="logic" edge="1">
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="ble" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="logic" target="voice" edge="1">
+        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="mpu6050" target="logic">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="logic" target="oled" edge="1">
+        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="ultra" target="logic" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="door" target="loop" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="440" y="560" />
-              <mxPoint x="690" y="560" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="edge12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="spray" target="loop" edge="1">
+        <mxCell id="edge7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="ble" target="logic">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="edge13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="voice" target="loop" edge="1">
+        <mxCell id="edge8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="logic" target="led">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zpfocMuhia9GllL1O28J-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.545;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="yolo" target="door">
+        <mxCell id="edge9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="logic" target="oled" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="logic" target="beep" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="logic" target="bt_send" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="led" target="loop" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="oled" target="loop" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="beep" target="loop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="bt_send" target="loop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="loop" target="mpu6050">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
