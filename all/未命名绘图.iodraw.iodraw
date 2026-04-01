@@ -7,17 +7,20 @@
         <mxCell id="main" value="&lt;b&gt;STM32F103骑行安全监测系统 - 主程序&lt;/b&gt;&lt;br&gt;MPU6050姿态识别+超声波防撞+蓝牙上传+OLED显示" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="500" y="40" width="420" height="90" as="geometry" />
         </mxCell>
+        <mxCell id="OyaMiK4oeesfiA8nytJw-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="init" target="ble">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="init" value="&lt;b&gt;系统上电初始化&lt;/b&gt;&lt;br&gt;STM32F103外设初始化&lt;br&gt;MPU6050/OLED/蓝牙/超声波/LED/蜂鸣器初始化" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="520" y="160" width="380" height="75" as="geometry" />
         </mxCell>
         <mxCell id="mpu6050" value="&lt;b&gt;MPU6050姿态采集&lt;/b&gt;&lt;br&gt;读取加速度/陀螺仪数据&lt;br&gt;动作识别：左转/右转/刹车" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="250" y="270" width="240" height="70" as="geometry" />
+          <mxGeometry x="270" y="270" width="240" height="70" as="geometry" />
         </mxCell>
         <mxCell id="ultra" value="&lt;b&gt;超声波测距&lt;/b&gt;&lt;br&gt;HC-SR04采集后方距离&lt;br&gt;实时计算车距数据" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="510" y="270" width="220" height="70" as="geometry" />
+          <mxGeometry x="600" y="270" width="220" height="70" as="geometry" />
         </mxCell>
         <mxCell id="ble" value="&lt;b&gt;蓝牙指令监听&lt;/b&gt;&lt;br&gt;HC-05/06接收APP指令&lt;br&gt;准备状态信息上传" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="910" y="290" width="220" height="70" as="geometry" />
+          <mxGeometry x="890" y="270" width="220" height="70" as="geometry" />
         </mxCell>
         <mxCell id="logic" value="&lt;b&gt;系统逻辑判断&lt;/b&gt;&lt;br&gt;动作状态判定+防撞距离判断&lt;br&gt;生成控制指令" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="560" y="390" width="300" height="70" as="geometry" />
@@ -41,9 +44,6 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="init" target="ultra" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="edge6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="ultra" target="logic" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
