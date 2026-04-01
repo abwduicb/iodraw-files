@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="G-jk-bFvzxO7wDGGtwJR">
-    <mxGraphModel dx="797" dy="398" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="957" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -24,7 +24,7 @@
         <mxCell id="ultra" value="&lt;b&gt;超声波测距&lt;/b&gt;&lt;br&gt;HC-SR04采集后方距离&lt;br&gt;实时计算车距数据" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="600" y="270" width="220" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="ble" value="&lt;b&gt;蓝牙指令监听&lt;/b&gt;&lt;br&gt;HC-05/06接收APP指令&lt;br&gt;准备状态信息上传" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
+        <mxCell id="ble" value="&lt;b&gt;蓝牙指令监听&lt;/b&gt;&lt;br&gt;JDY33-BLE接收APP指令&lt;br&gt;准备状态信息上传" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="870" y="270" width="220" height="70" as="geometry" />
         </mxCell>
         <mxCell id="logic" value="&lt;b&gt;系统逻辑判断&lt;/b&gt;&lt;br&gt;动作状态判定+防撞距离判断&lt;br&gt;生成控制指令" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
@@ -52,7 +52,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="OyaMiK4oeesfiA8nytJw-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.437;entryY=-0.039;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="init" target="mpu6050">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="250" />
+              <mxPoint x="415" y="250" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
