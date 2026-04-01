@@ -1,13 +1,13 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="G-jk-bFvzxO7wDGGtwJR">
-    <mxGraphModel dx="1395" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1154" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="main" value="&lt;b&gt;STM32F103骑行安全监测系统 - 主程序&lt;/b&gt;&lt;br&gt;MPU6050姿态识别+超声波防撞+蓝牙上传+OLED显示" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="500" y="40" width="420" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="init" value="&lt;b&gt;系统上电初始化&lt;/b&gt;&lt;br&gt;STM32F103外设初始化 | I2C/SPI/串口/ADC配置&lt;br&gt;MPU6050/OLED/蓝牙/超声波/LED/蜂鸣器初始化" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
+        <mxCell id="init" value="&lt;b&gt;系统上电初始化&lt;/b&gt;&lt;br&gt;STM32F103外设初始化&lt;br&gt;MPU6050/OLED/蓝牙/超声波/LED/蜂鸣器初始化" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="520" y="160" width="380" height="75" as="geometry" />
         </mxCell>
         <mxCell id="mpu6050" value="&lt;b&gt;MPU6050姿态采集&lt;/b&gt;&lt;br&gt;读取加速度/陀螺仪数据&lt;br&gt;动作识别：左转/右转/刹车" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
