@@ -48,11 +48,20 @@
         <mxCell id="led" value="&lt;b&gt;LED状态指示&lt;/b&gt;&lt;br&gt;左转LED/右转LED/刹车LED&lt;br&gt;对应动作点亮" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="270" y="470" width="200" height="65" as="geometry" />
         </mxCell>
+        <mxCell id="OyaMiK4oeesfiA8nytJw-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oled" target="loop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="oled" value="&lt;b&gt;OLED数据显示&lt;/b&gt;&lt;br&gt;显示动作状态+距离+姿态数据&lt;br&gt;实时刷新界面" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="500" y="470" width="200" height="65" as="geometry" />
         </mxCell>
+        <mxCell id="OyaMiK4oeesfiA8nytJw-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="beep" target="loop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="beep" value="&lt;b&gt;蜂鸣器报警&lt;/b&gt;&lt;br&gt;距离低于阈值启动报警&lt;br&gt;安全距离关闭报警" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="730" y="470" width="200" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="OyaMiK4oeesfiA8nytJw-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="bt_send" target="loop">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bt_send" value="&lt;b&gt;蓝牙信息上传&lt;/b&gt;&lt;br&gt;上传动作/距离/报警状态至APP&lt;br&gt;实现无线监控" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="960" y="470" width="200" height="65" as="geometry" />
