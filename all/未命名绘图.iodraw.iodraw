@@ -33,6 +33,15 @@
         <mxCell id="OyaMiK4oeesfiA8nytJw-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="logic" target="oled">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="OyaMiK4oeesfiA8nytJw-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="logic" target="beep">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OyaMiK4oeesfiA8nytJw-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="logic" target="bt_send">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OyaMiK4oeesfiA8nytJw-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="logic" target="led">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="logic" value="&lt;b&gt;系统逻辑判断&lt;/b&gt;&lt;br&gt;动作状态判定+防撞距离判断&lt;br&gt;生成控制指令" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="560" y="370" width="300" height="70" as="geometry" />
         </mxCell>
