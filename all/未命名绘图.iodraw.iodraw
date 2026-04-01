@@ -35,7 +35,7 @@
           <mxGeometry x="810" y="470" width="200" height="65" as="geometry" />
         </mxCell>
         <mxCell id="loop" value="&lt;b&gt;系统主循环&lt;/b&gt;&lt;br&gt;循环采集-判断-执行&lt;br&gt;实时稳定运行" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="500" y="570" width="300" height="75" as="geometry" />
+          <mxGeometry x="530" y="585" width="300" height="75" as="geometry" />
         </mxCell>
         <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;strokeColor=#000000;" parent="1" source="main" target="init" edge="1">
           <mxGeometry relative="1" as="geometry" />
