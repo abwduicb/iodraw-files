@@ -76,6 +76,9 @@
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-38" value="视觉与电缸联动逻辑设计" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="367.5" y="540" width="135" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-40" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
