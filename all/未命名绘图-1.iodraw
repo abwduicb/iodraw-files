@@ -7,9 +7,6 @@
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-10" value="芒果图像数据集构建（合格果/缺陷果）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="375" y="340" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-1" target="vCQD7Rx4-KF1-QlEkizX-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-1" value="需求分析与指标确定" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="380" y="180" width="110" height="30" as="geometry" />
         </mxCell>
@@ -19,7 +16,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-6" value="系统总计方案设计（输送+视觉+电缸剔除）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="260" width="130" height="50" as="geometry" />
+          <mxGeometry x="370" y="230" width="130" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
