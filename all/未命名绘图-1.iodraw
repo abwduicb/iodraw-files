@@ -32,18 +32,11 @@
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-15" value="深度学习检测模型设计与训练（YOLOv8n）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="375" y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-17">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="540" y="480" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-17">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="580.3333333333334" y="440" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-17" value="机械结构设计" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="375" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-28" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="520" y="440" width="20" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
