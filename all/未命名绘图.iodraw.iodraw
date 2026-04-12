@@ -82,9 +82,6 @@
         <mxCell id="e_disp_loop" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="display" target="loop">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e_loop_encoder" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="loop" target="encoder">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
