@@ -100,8 +100,8 @@
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-44" value="毕业设计说明书撰写" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="380" y="800" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-46" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="860" width="120" height="60" as="geometry" />
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-46" value="答辩准备" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="890" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
