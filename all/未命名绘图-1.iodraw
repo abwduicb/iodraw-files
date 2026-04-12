@@ -32,7 +32,7 @@
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-15" value="深度学习检测模型设计与训练（YOLOv8n）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="375" y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-17" value="机械结构设计" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="375" y="450" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
