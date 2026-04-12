@@ -24,8 +24,16 @@
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.51;entryY=-0.053;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-1" target="vCQD7Rx4-KF1-QlEkizX-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-15" target="vCQD7Rx4-KF1-QlEkizX-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-15" value="深度学习检测模型设计与训练（YOLOv8n）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="375" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="450" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
