@@ -76,8 +76,16 @@
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-38" value="视觉与电缸联动逻辑设计" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="367.5" y="540" width="135" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="vCQD7Rx4-KF1-QlEkizX-40" value="系统方案论证" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="375" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-42" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="375" y="710" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
