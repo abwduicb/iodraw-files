@@ -1,57 +1,57 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="d-4zyr8EYWpYd87gf6hJ">
-    <mxGraphModel dx="1395" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-10">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="vCQD7Rx4-KF1-QlEkizX-10" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="435" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-10" value="芒果图像数据集构建（合格果/缺陷果）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-10" value="芒果图像数据集构建（合格果/缺陷果）" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="375" y="290" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-1" value="需求分析与指标确定" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-1" value="需求分析与指标确定" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="160" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-6" target="vCQD7Rx4-KF1-QlEkizX-10">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="vCQD7Rx4-KF1-QlEkizX-6" target="vCQD7Rx4-KF1-QlEkizX-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-6" value="系统总计方案设计（输送+视觉+电缸剔除）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-6" value="系统总计方案设计（输送+视觉+电缸剔除）" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="370" y="210" width="130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.51;entryY=-0.053;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-1" target="vCQD7Rx4-KF1-QlEkizX-6">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.51;entryY=-0.053;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="vCQD7Rx4-KF1-QlEkizX-1" target="vCQD7Rx4-KF1-QlEkizX-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-15" target="vCQD7Rx4-KF1-QlEkizX-17">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="vCQD7Rx4-KF1-QlEkizX-15" target="vCQD7Rx4-KF1-QlEkizX-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="435" y="450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-15" value="深度学习检测模型设计与训练（YOLOv8n）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-15" value="深度学习检测模型设计与训练（YOLOv8n）" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="375" y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-17">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="vCQD7Rx4-KF1-QlEkizX-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="435" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-17" value="机械结构设计" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-17" value="机械结构设计" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="375" y="450" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-30" value="水平传送带系统" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-30" value="水平传送带系统" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" parent="1" vertex="1">
           <mxGeometry x="585" y="400" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-31" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;" edge="1" target="vCQD7Rx4-KF1-QlEkizX-30" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-31" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;" parent="1" target="vCQD7Rx4-KF1-QlEkizX-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="495" y="472" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-33" value="龙门式视觉支架" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-33" value="龙门式视觉支架" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" parent="1" vertex="1">
           <mxGeometry x="585" y="460" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-34" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;" edge="1" target="vCQD7Rx4-KF1-QlEkizX-33" parent="1" source="vCQD7Rx4-KF1-QlEkizX-17">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-34" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;" parent="1" source="vCQD7Rx4-KF1-QlEkizX-17" target="vCQD7Rx4-KF1-QlEkizX-33" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="495" y="502" as="sourcePoint" />
             <Array as="points">
@@ -60,48 +60,54 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-35" value="电缸推料剔除机构" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-35" value="电缸推料剔除机构" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" parent="1" vertex="1">
           <mxGeometry x="580" y="520" width="140" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-36" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1.003;exitY=0.717;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" target="vCQD7Rx4-KF1-QlEkizX-35" parent="1" source="vCQD7Rx4-KF1-QlEkizX-17">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-36" value="" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1.003;exitY=0.717;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="vCQD7Rx4-KF1-QlEkizX-17" target="vCQD7Rx4-KF1-QlEkizX-35" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="490" y="532" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-38">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="vCQD7Rx4-KF1-QlEkizX-38" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="435" y="630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-38" value="视觉与电缸联动逻辑设计" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-38" value="视觉与电缸联动逻辑设计" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="367.5" y="540" width="135" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-40">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="vCQD7Rx4-KF1-QlEkizX-40" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="435" y="710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-40" value="系统方案论证" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-40" value="系统方案论证" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="375" y="630" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-42">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="vCQD7Rx4-KF1-QlEkizX-42" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="437.66666666666663" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-42" value="工程图绘制与三维建模" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-42" value="工程图绘制与三维建模" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="375" y="710" width="125" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="vCQD7Rx4-KF1-QlEkizX-44" target="vCQD7Rx4-KF1-QlEkizX-46">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="vCQD7Rx4-KF1-QlEkizX-44" target="vCQD7Rx4-KF1-QlEkizX-46" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="440" y="890" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-44" value="毕业设计说明书撰写" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-44" value="毕业设计说明书撰写" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="800" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vCQD7Rx4-KF1-QlEkizX-46" value="答辩准备" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="vCQD7Rx4-KF1-QlEkizX-46" value="答辩准备" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="890" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uV3i-WortNh8v2KqUgWX-1" value="" style="shape=link;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="360" y="430" as="sourcePoint" />
+            <mxPoint x="460" y="430" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
