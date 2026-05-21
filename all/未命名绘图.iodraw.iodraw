@@ -1,87 +1,39 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="G-jk-bFvzxO7wDGGtwJR">
-    <mxGraphModel dx="1674" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4155" dy="2005" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="main" value="&lt;b&gt;STM32F103剥壳机双轴控制单元&lt;/b&gt;&lt;br&gt;X/Y轴电机+编码器+PID闭环控制" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000;strokeWidth=2;" parent="1" vertex="1">
+        <mxCell id="main" value="&lt;b&gt;课题整体技术路线&lt;/b&gt;&lt;br&gt;南极磷虾自动化剥壳取肉关键单元设计" style="rounded=1;fillColor=#ffffff;whiteSpace=wrap;html=1;strokeColor=#000;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="500" y="40" width="420" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="init" value="&lt;b&gt;系统初始化&lt;/b&gt;&lt;br&gt;GPIO、定时器、PWM初始化&lt;br&gt;电机驱动、编码器、PID参数配置" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" parent="1" vertex="1">
-          <mxGeometry x="520" y="160" width="380" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="edge1" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=block;strokeColor=#000;" parent="1" source="main" target="init" edge="1">
+        <mxCell id="edge1" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=block;strokeColor=#000;" parent="1" source="main" target="analysis" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="encoder" value="&lt;b&gt;读取编码器数据&lt;/b&gt;&lt;br&gt;X轴、Y轴实时位置采集" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
-          <mxGeometry x="310" y="270" width="240" height="70" as="geometry" />
+        <mxCell id="analysis" value="&lt;b&gt;前期调研分析&lt;/b&gt;&lt;br&gt;行业痛点与国内外现状研究&lt;br&gt;明确研究目标与技术难点" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="310" y="160" width="240" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="target" value="&lt;b&gt;目标位置设定&lt;/b&gt;&lt;br&gt;剥壳轨迹、X/Y轴目标坐标" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
-          <mxGeometry x="600" y="270" width="220" height="70" as="geometry" />
+        <mxCell id="scheme" value="&lt;b&gt;系统总体方案设计&lt;/b&gt;&lt;br&gt;确定STM32主控架构&lt;br&gt;规划控制策略与模块划分" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="160" width="240" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="check" value="&lt;b&gt;运行状态监测&lt;/b&gt;&lt;br&gt;限位检测、异常保护判断" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
-          <mxGeometry x="870" y="270" width="220" height="70" as="geometry" />
+        <mxCell id="e_ana_sch" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="analysis" target="scheme" />
+        <mxCell id="hardware" value="&lt;b&gt;硬件电路设计建模&lt;/b&gt;&lt;br&gt;最小系统、驱动、采集电路设计&lt;br&gt;Proteus搭建仿真电路" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="310" y="270" width="240" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="e_init_encoder" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="init" target="encoder">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="software" value="&lt;b&gt;嵌入式程序开发&lt;/b&gt;&lt;br&gt;底层驱动编写、PID算法实现&lt;br&gt;电机控制与人机交互程序" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="270" width="240" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="e_init_target" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="init" target="target">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="e_sch_har" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="scheme" target="hardware" />
+        <mxCell id="e_sch_sof" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="scheme" target="software" />
+        <mxCell id="simulate" value="&lt;b&gt;系统联合仿真调试&lt;/b&gt;&lt;br&gt;程序加载仿真运行&lt;br&gt;参数整定与工况性能测试" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="450" y="380" width="280" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="e_init_check" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="init" target="check">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="e_har_sim" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="hardware" target="simulate" />
+        <mxCell id="e_sof_sim" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="software" target="simulate" />
+        <mxCell id="result" value="&lt;b&gt;结果分析总结&lt;/b&gt;&lt;br&gt;验证控制方案可行性&lt;br&gt;梳理不足并提出优化方向" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
+          <mxGeometry x="450" y="490" width="280" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="pid" value="&lt;b&gt;PID闭环计算&lt;/b&gt;&lt;br&gt;X轴、Y轴分别PID&lt;br&gt;误差计算→PWM输出" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
-          <mxGeometry x="560" y="370" width="300" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="e_encoder_pid" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="encoder" target="pid">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e_target_pid" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="target" target="pid">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e_check_pid" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="check" target="pid">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="motor_x" value="&lt;b&gt;X轴电机驱动&lt;/b&gt;&lt;br&gt;横向运动控制&lt;br&gt;方向+PWM输出" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
-          <mxGeometry x="270" y="470" width="200" height="65" as="geometry" />
-        </mxCell>
-        <mxCell id="motor_y" value="&lt;b&gt;Y轴电机驱动&lt;/b&gt;&lt;br&gt;轴向进给控制&lt;br&gt;方向+PWM输出" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
-          <mxGeometry x="500" y="470" width="200" height="65" as="geometry" />
-        </mxCell>
-        <mxCell id="action" value="&lt;b&gt;剥壳动作执行&lt;/b&gt;&lt;br&gt;双轴联动精准剥壳" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
-          <mxGeometry x="730" y="470" width="200" height="65" as="geometry" />
-        </mxCell>
-        <mxCell id="display" value="&lt;b&gt;状态显示&lt;/b&gt;&lt;br&gt;位置、速度、运行状态" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;" vertex="1" parent="1">
-          <mxGeometry x="960" y="470" width="200" height="65" as="geometry" />
-        </mxCell>
-        <mxCell id="e_pid_x" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="pid" target="motor_x">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e_pid_y" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="pid" target="motor_y">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e_pid_act" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="pid" target="action">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e_pid_disp" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="pid" target="display">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="loop" value="&lt;b&gt;系统主循环&lt;/b&gt;&lt;br&gt;实时采集-PID计算-电机驱动&lt;br&gt;连续剥壳作业" style="rounded=1;fillColor=#fff;whiteSpace=wrap;html=1;strokeColor=#000;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="570" y="585" width="300" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="e_x_loop" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="motor_x" target="loop">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e_y_loop" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="motor_y" target="loop">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e_act_loop" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="action" target="loop">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e_disp_loop" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="display" target="loop">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
+        <mxCell id="e_sim_res" style="html=1;endArrow=block;strokeColor=#000;" edge="1" parent="1" source="simulate" target="result" />
       </root>
     </mxGraphModel>
   </diagram>
