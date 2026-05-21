@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" value="&lt;b&gt;1.3.5 技术路线&lt;/b&gt;&lt;br&gt;基于STM32和Proteus仿真的南极磷虾自动化剥壳取肉关键单元设计" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="title" value="&lt;br&gt;基于STM32和Proteus仿真的南极磷虾自动化剥壳取肉关键单元设计" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="430" y="40" width="520" height="90" as="geometry" />
         </mxCell>
         <mxCell id="background" value="&lt;b&gt;课题背景与需求分析&lt;/b&gt;&lt;br&gt;分析南极磷虾加工特点&lt;br&gt;明确剥壳取肉对自动化控制的需求" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
