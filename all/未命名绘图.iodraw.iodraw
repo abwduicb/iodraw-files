@@ -5,31 +5,31 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="title" value="基于STM32和Proteus仿真的南极磷虾自动化剥壳取肉关键单元设计" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontSize=15;" vertex="1" parent="1">
-          <mxGeometry x="430" y="40" width="520" height="90" as="geometry" />
+          <mxGeometry x="360" y="210" width="520" height="90" as="geometry" />
         </mxCell>
         <mxCell id="background" value="&lt;b&gt;课题背景与需求分析&lt;/b&gt;&lt;br&gt;分析南极磷虾加工特点&lt;br&gt;明确剥壳取肉对自动化控制的需求" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="480" y="160" width="420" height="80" as="geometry" />
+          <mxGeometry x="410" y="330" width="420" height="80" as="geometry" />
         </mxCell>
         <mxCell id="scheme" value="&lt;b&gt;系统总体方案设计&lt;/b&gt;&lt;br&gt;确定“传感器反馈—嵌入式运算—电机执行”闭环控制结构&lt;br&gt;构建主控器、驱动器、执行器分层架构" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="455" y="280" width="470" height="90" as="geometry" />
+          <mxGeometry x="385" y="450" width="470" height="90" as="geometry" />
         </mxCell>
         <mxCell id="hardware" value="&lt;b&gt;硬件电路设计与建模&lt;/b&gt;&lt;br&gt;STM32F103最小系统&lt;br&gt;L298N电机驱动电路&lt;br&gt;ADC采集、按键与OLED显示电路" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="190" y="430" width="280" height="115" as="geometry" />
+          <mxGeometry x="120" y="600" width="280" height="115" as="geometry" />
         </mxCell>
         <mxCell id="software" value="&lt;b&gt;嵌入式控制软件开发&lt;/b&gt;&lt;br&gt;GPIO、定时器、PWM、ADC驱动编写&lt;br&gt;PID控制算法设计&lt;br&gt;电机启停、正反转与急停保护逻辑" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="550" y="430" width="310" height="115" as="geometry" />
+          <mxGeometry x="480" y="600" width="310" height="115" as="geometry" />
         </mxCell>
         <mxCell id="simulation" value="&lt;b&gt;Proteus联合仿真&lt;/b&gt;&lt;br&gt;搭建STM32、电机驱动、传感器及虚拟负载模型&lt;br&gt;加载Keil生成的HEX文件进行软硬件联合调试" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="940" y="430" width="330" height="115" as="geometry" />
+          <mxGeometry x="870" y="600" width="330" height="115" as="geometry" />
         </mxCell>
         <mxCell id="debug" value="&lt;b&gt;系统调试与参数优化&lt;/b&gt;&lt;br&gt;调节电位器模拟负载扰动&lt;br&gt;观察PWM波形与电机转速变化&lt;br&gt;整定PID参数Kp、Ki、Kd" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="350" y="610" width="310" height="110" as="geometry" />
+          <mxGeometry x="280" y="780" width="310" height="110" as="geometry" />
         </mxCell>
         <mxCell id="verify" value="&lt;b&gt;控制性能验证&lt;/b&gt;&lt;br&gt;验证电机调速稳定性&lt;br&gt;分析闭环响应、抗干扰能力与急停保护效果&lt;br&gt;判断系统方案可行性" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="740" y="610" width="330" height="110" as="geometry" />
+          <mxGeometry x="670" y="780" width="330" height="110" as="geometry" />
         </mxCell>
         <mxCell id="result" value="&lt;b&gt;形成设计结果与论文总结&lt;/b&gt;&lt;br&gt;完成硬件方案、软件程序和仿真验证&lt;br&gt;总结不足并提出后续实物开发与工程应用方向" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontSize=13;" vertex="1" parent="1">
-          <mxGeometry x="500" y="790" width="420" height="95" as="geometry" />
+          <mxGeometry x="430" y="960" width="420" height="95" as="geometry" />
         </mxCell>
         <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1" source="title" target="background">
           <mxGeometry relative="1" as="geometry" />
@@ -63,14 +63,14 @@
         </mxCell>
         <mxCell id="e11" value="反馈优化" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;dashed=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" edge="1" parent="1" source="verify" target="software">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1120" y="660" as="sourcePoint" />
-            <mxPoint x="700" y="550" as="targetPoint" />
+            <mxPoint x="1050" y="830" as="sourcePoint" />
+            <mxPoint x="630" y="720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="e12" value="结构修正" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;dashed=1;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" edge="1" parent="1" source="debug" target="hardware">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="370" y="650" as="sourcePoint" />
-            <mxPoint x="320" y="545" as="targetPoint" />
+            <mxPoint x="300" y="820" as="sourcePoint" />
+            <mxPoint x="250" y="715" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
