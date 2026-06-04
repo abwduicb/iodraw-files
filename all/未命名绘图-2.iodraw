@@ -43,6 +43,11 @@
         <mxCell id="protectionUnit" value="保护检测单元&lt;br&gt;保护类型：过压/欠压/过流/过载/过热&lt;br&gt;报警输出：DO1/COM → ESP32中断引脚" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFF7E6;strokeColor=#FA8C16;" vertex="1" parent="1">
           <mxGeometry x="100" y="340" width="160" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="2fxnIfevflIB7X7QotnM-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="statusFeedback">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="statusFeedback" value="状态反馈单元&lt;br&gt;反馈设备：编码器（速度）/ PTC温度传感器（温度）&lt;br&gt;作用：闭环控制与安全监测" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#F9F0FF;strokeColor=#722ED1;" vertex="1" parent="1">
           <mxGeometry x="300" y="350" width="220" height="80" as="geometry" />
         </mxCell>
