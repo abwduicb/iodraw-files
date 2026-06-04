@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ioDraw.com/3.6.1 Chrome/124.0.6367.49 Electron/30.0.0 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="YT5TUjMFi1gZdDImGSSg">
-    <mxGraphModel dx="733" dy="689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="733" dy="1858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -23,7 +23,10 @@
           <mxGeometry x="560" y="100" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="commandReceiver" value="指令接收单元&lt;br&gt;控制器：ESP32-S3&lt;br&gt;协议：Modbus RTU（主站）&lt;br&gt;功能：启停/正反转/频率设定/加减速" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#F0F5FF;strokeColor=#2F54EB;" vertex="1" parent="1">
-          <mxGeometry x="100" y="220" width="160" height="80" as="geometry" />
+          <mxGeometry x="330" y="-20" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2fxnIfevflIB7X7QotnM-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="driveOutput" target="statusFeedback">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="driveOutput" value="驱动输出单元&lt;br&gt;输出端子：RUN/CAP&lt;br&gt;输出范围：0-220V / 0-50Hz" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFF0F6;strokeColor=#EB2F96;" vertex="1" parent="1">
           <mxGeometry x="300" y="220" width="220" height="80" as="geometry" />
