@@ -25,6 +25,11 @@
         <mxCell id="edge_command_inverter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="commandReceiver" target="inverter">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="2fxnIfevflIB7X7QotnM-6" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="edge_command_inverter">
+          <mxGeometry x="-0.0902" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="driveOutput" value="驱动输出单元&lt;br&gt;输出端子：RUN/CAP&lt;br&gt;输出范围：0-220V / 0-50Hz" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFF0F6;strokeColor=#EB2F96;" vertex="1" parent="1">
           <mxGeometry x="300" y="220" width="220" height="80" as="geometry" />
         </mxCell>
@@ -41,7 +46,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="statusFeedback" value="状态反馈单元&lt;br&gt;反馈设备：编码器（速度）/ PTC温度传感器（温度）&lt;br&gt;作用：闭环控制与安全监测" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#F9F0FF;strokeColor=#722ED1;" vertex="1" parent="1">
-          <mxGeometry x="300" y="340" width="220" height="80" as="geometry" />
+          <mxGeometry x="300" y="350" width="220" height="80" as="geometry" />
         </mxCell>
         <mxCell id="edge_motor_status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="motor" target="statusFeedback">
           <mxGeometry relative="1" as="geometry" />
@@ -49,7 +54,7 @@
         <mxCell id="edge_status_inverter" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="statusFeedback" target="inverter">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mechanicalLoad" value="机械负载&lt;br&gt;类型：减速机/传送带&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#E6FFFB;strokeColor=#13C2C2;" vertex="1" parent="1">
+        <mxCell id="mechanicalLoad" value="机械负载&lt;br&gt;类型：风机/水泵/传送带&lt;br&gt;特性：转矩随转速变化" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#E6FFFB;strokeColor=#13C2C2;" vertex="1" parent="1">
           <mxGeometry x="560" y="220" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="edge_motor_load" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="motor" target="mechanicalLoad">
